@@ -9,28 +9,28 @@
 </style>
 
 <div id="title" style="width: 1000px; height: 5px; font-family: 'Roboto Condensed';"></div>
-<div id="container" style="position: relative; left: -80px; width: 900px; height: 600px;"></div>
+<div id="container" style="position: relative; left: -100px; width: 850px; height: 550px;"></div>
 <script>
 
     d3.select("#title").append("svg")
                 .attr("width", 900)
                 .attr("height", 50)
                 .append("text")
-                .attr("x", 100)             
+                .attr("x", 80)             
                 .attr("y", 40)
                 .style("font", "Roboto Condensed")
-                .style("font-size", "25px")
+                .style("font-size", "24px")
                 .text("2013-14 Jumbo Grads in the United States");
 
     d3.select("#title").append("svg")
                 .attr("width", 900)
                 .attr("height", 50)
                 .append("text")
-                .attr("x", 100)             
-                .attr("y", 20)
+                .attr("x", 80)             
+                .attr("y", 12)
                 .attr("fill", "#989898")
                 .style("font", "Roboto Condensed")
-                .style("font-size", "18px")
+                .style("font-size", "14px")
                 .text("Domestic first outcomes of Tufts graduates (hover for statistics)");
 
     var map = new Datamap({
