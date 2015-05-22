@@ -9,7 +9,7 @@
 </style>
 
 <div id="title" style="width: 1000px; height: 5px; font-family: 'Roboto Condensed';"></div>
-<div id="container" style="position: relative; left: -120px; width: 850px; height: 550px;"></div>
+<div id="container" style="position: relative; left: -120px; width: 800px; height: 550px;"></div>
 <script>
 
     d3.select("#title").append("svg")
@@ -38,7 +38,7 @@
       scope: 'usa',
       geographyConfig: {
       popupTemplate: function(geography, data) {
-        return '<div style="border-radius:10px; padding: 10px; position: relative; top: -50px; right: -50px; opacity: 0.85;" class="hoverinfo"><b><div style="font-size:20px">' + geography.properties.name + '</div></b>' + "<br>" + 
+        return '<div style="border-radius:10px; padding: 10px; position: fixed; top: 470px; left: 200px; opacity: 0.85;" class="hoverinfo"><b><div style="font-size:20px">' + geography.properties.name + '</div></b>' + "<br>" + 
         '<b>Reported # of grads:</b> &#09;' +  data["number of grads"] + '<br>' +        
         '<b>Most popular field of study:</b> &#09;' +  data["most popular major"] + '<br>' +
         '<b>Most popular position:</b> &#09;' +  data["most popular position"] + '<br>' +
