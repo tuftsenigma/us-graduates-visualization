@@ -1,6 +1,6 @@
 # U.S. Graduates Visualization
 
-> *On an average day, there are about 60 confessions broadcasted on the Tufts Confessions Facebook page. The page receives about 1132 confessions in a given month and since its creation in 2013, it has posted nearly 25,000 anonymous confessions of Tufts students. Clearly, we have a lot to say. But what are we all talking about and is it important?*
+> *The 2014-15 academic year rolls to an end and a graduating class of more than 2,500 disseminates out into the real world. Another year, another Jumbo cohort.*
 
  An interactive map visualization of the reported domestic first outcomes of Tufts graduates ('13 and '14) 
 
