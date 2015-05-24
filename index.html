@@ -39,11 +39,11 @@
       geographyConfig: {
       popupTemplate: function(geography, data) {
         return '<div style="border-radius:10px; padding: 10px; position: fixed; top: 470px; left: 200px; opacity: 0.85;" class="hoverinfo"><b><div style="font-size:20px">' + geography.properties.name + '</div></b>' + "<br>" + 
-        '<b>Reported # of grads:</b> &#09;' +  data["number of grads"] + '<br>' +        
-        '<b>Most popular field of study:</b> &#09;' +  data["most popular major"] + '<br>' +
-        '<b>Most popular position:</b> &#09;' +  data["most popular position"] + '<br>' +
-        '<b>Most popular destination:</b> &#09;' +  data["most popular city"] + '<br>' +
-        '<b>Most popular institution:</b> &#09;' +  data["most popular institution"] + '<br>';
+        '<b>Reported # of grads:</b><span style="margin-left:57px">' +  data["number of grads"] + '</span><br>' +        
+        '<b>Most popular field of study:</b><span style="margin-left:20px">' +  data["most popular major"] + '</span><br>' +
+        '<b>Most popular position:</b><span style="margin-left:45px">' +  data["most popular position"] + '</span><br>' +
+        '<b>Most popular destination:</b><span style="margin-left:30px">' +  data["most popular city"] + '</span><br>' +
+        '<b>Most popular institution:</b><span style="margin-left:35px">' +  data["most popular institution"] + '</span><br>';
         }
     },
       fills: {
