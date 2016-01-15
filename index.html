@@ -12,13 +12,13 @@
 
 <div id="title" style="height: 5px; font-family: 'Roboto Condensed';"></div>
 <!-- <div id="container" style="position: relative; left: -120px; height: 550px;"></div>
- --><div id="container" style="height: 550px;"></div>
+ --><div id="container" style="height: 100%;"></div>
 
 
 <script>
 
     d3.select("#title").append("svg")
-                .attr("width", 900)
+                .attr("width", document.getElementById("container").clientWidth)
                 .attr("height", 50)
                 .append("text")
                 .attr("x", 70)             
@@ -28,7 +28,7 @@
                 .text("2013-14 Jumbo Grads in the United States");
 
     d3.select("#title").append("svg")
-                .attr("width", 900)
+                .attr("width", document.getElementById("container").clientWidth)
                 .attr("height", 50)
                 .append("text")
                 .attr("x", 70)             
@@ -41,6 +41,7 @@
     var map = new Datamap({
       responsive: true,
       width :parseInt(d3.select('#container').style('width'), 10),
+      height:parseInt(d3.select('#container').style('height'), 10),
       element: document.getElementById('container'),
       scope: 'usa',
       geographyConfig: {
@@ -65,14 +66,17 @@
     dataUrl : "usData.json",
 
     });
-    map.legend();
-
 
     d3.select(window).on('resize', resize); 
 
     function resize() {
         // // update width
+        map.updateChoropleth({
+            responsive: false,
+        });
         map.resize();
+
+
 
     }
 
