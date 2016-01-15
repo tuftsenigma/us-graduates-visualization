@@ -10,8 +10,9 @@
     } 
 </style>
 
-<div id="title" style="width: 1000px; height: 5px; font-family: 'Roboto Condensed';"></div>
+<div id="title" style="height: 5px; font-family: 'Roboto Condensed';"></div>
 <div id="container" style="position: relative; left: -120px; width: 800px; height: 550px;"></div>
+
 <script>
 
     d3.select("#title").append("svg")
@@ -36,6 +37,7 @@
                 .text("Domestic first outcomes of Tufts graduates (hover for statistics)");
 
     var map = new Datamap({
+      width :parseInt(d3.select('#container').style('width'), 10),
       element: document.getElementById('container'),
       scope: 'usa',
       geographyConfig: {
